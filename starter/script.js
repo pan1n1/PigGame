@@ -1,5 +1,8 @@
 'use strict';
 
+
+var $playerTurn = 1;
+
 var $total = 0;
 var $score = 0;
 
@@ -19,7 +22,6 @@ const score = function($result, $score){
 }
 
 const diceImage = function($rol){
-    console.log("Roll = " + $rol);
     if($rol == 1){
         console.log("Dice = 1");
         dice.src="./dice-1.png"
@@ -27,6 +29,22 @@ const diceImage = function($rol){
     if($rol == 2){
         console.log("Dice = 2");
         dice.src="./dice-2.png"
+    }
+    if($rol == 3){
+        console.log("Dice = 3");
+        dice.src="./dice-3.png"
+    }
+    if($rol == 4){
+        console.log("Dice = 4");
+        dice.src="./dice-4.png"
+    }
+    if($rol == 5){
+        console.log("Dice = 5");
+        dice.src="./dice-5.png"
+    }
+    if($rol == 6){
+        console.log("Dice = 6");
+        dice.src="./dice-6.png"
     }
 }
 
@@ -74,6 +92,6 @@ dice.src="dice-1.png"
 //*********************/
 score0.textContent = 0;
 score1.textContent = 0;
-dice.classList.add('hidden');
+//dice.classList.add('hidden');
 
 btnRoll.addEventListener('click', click);
