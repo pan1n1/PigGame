@@ -148,6 +148,37 @@ main {
   outline: none;
 }
 
+.turn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: rgba(250, 99, 99, 0.167);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+
+
+
+  /* The texts distance from the top*/
+  top: 30rem;
+}
+
+
+
+
+
 .dice {
   position: absolute;
   left: 50%;
